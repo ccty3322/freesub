@@ -5,13 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  server: 77.74.123.106
-  port: 4443
+  server: 199.232.78.160
+  port: 443
   udp: true
   type: trojan
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: true
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP
 proxy-groups:
 - name: PROXIES
   type: select
